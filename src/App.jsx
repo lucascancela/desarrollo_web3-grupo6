@@ -1,11 +1,13 @@
-import InfoAnimal from "./components/InfoAnimal";
+import Galery from "./components/galery";
 
 function App() {
+  
+
   return (
     <>
-      < InfoAnimal />
+      < Galery />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

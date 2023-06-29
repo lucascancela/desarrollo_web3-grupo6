@@ -1,0 +1,21 @@
+* {
+    background-color: #ACCC78;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.divImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
