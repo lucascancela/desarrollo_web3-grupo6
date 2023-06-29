@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Galery.css";
+import BtnInicio from "./BtnIncio";
 
 function Galery() {
     const [data, setData] = useState({});
@@ -16,6 +17,8 @@ function Galery() {
 
     return (
         <div className="container">
+            < BtnInicio />
+
             <h1>Galería de Animales</h1>
             <p>Selecciona la foto del animal para obtener más información</p>
         
