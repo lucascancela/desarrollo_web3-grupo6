@@ -1,6 +1,8 @@
 function InfoAnimal() {
   return (
-    <div>InfoAnimal</div>
+    <>
+      <div>InfoAnimal</div>
+    </>
   );
 }
 
