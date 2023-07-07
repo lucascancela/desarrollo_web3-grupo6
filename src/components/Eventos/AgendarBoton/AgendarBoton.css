@@ -1,0 +1,24 @@
+.evento__body .agendar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  background: #287c4d;
+  color: #fff;
+  font-size: 24px;
+  width: max-content !important;
+  height: max-content !important;
+  border-radius: 50px;
+  transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.evento__body .agendar p {
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.evento__body .agendar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px #0000003e;
+}

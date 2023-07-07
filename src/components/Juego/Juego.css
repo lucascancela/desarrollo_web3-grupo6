@@ -1,0 +1,140 @@
+section.juego {
+  width: 100%;
+  margin-block: 10vh;
+  background: rgb(255, 255, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.juego>img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.juego__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 10vw);
+  padding-block: 10vh;
+  padding-inline: 5vw;
+}
+
+.juego__info h2 {
+  margin-block: 0;
+  font-size: calc(1rem + 1vw);
+}
+
+.juego__info p {
+  max-width: 60%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.juego__info button {
+  margin-top: 20px;
+  display: flex;
+  padding-block: 10px;
+  width: 200px;
+  border-radius: 60px;
+  background: #378d5e;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.juego__info button p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.juego__info button ion-icon {
+  --ionicon-stroke-width: 40;
+  font-size: 24px;
+}
+
+.juego__info button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px #00000042;
+}
+
+
+
+/* QUIZ */
+
+.quiz {
+  position: fixed;
+  z-index: 1010;
+  inset: 0;
+  background: #43b377;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.9);
+  transition: .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.quiz.mostrar {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+
+.card-juego {
+  position: absolute;
+  width: calc(100% - 50vw);
+  height: calc(100% - 20vh);
+  padding-inline: 5vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 10px 30px #00000043;
+  border-radius: 6px;
+}
+
+
+/* Botón Volver */
+
+button.cerrar-juego {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px;
+  font-size: 24px;
+  color: #0e4428;
+  z-index: 300;
+  border-radius: 50%;
+  background: #b3ffd7;
+}
+
+
+@media screen and (max-width: 950px) {
+  .card-juego {
+    width: calc(100% - 30vw);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-juego {
+    width: calc(100% - 10vw);
+    height: 100%;
+    padding: 5vw 10vh;
+  }
+
+  .juego button:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}

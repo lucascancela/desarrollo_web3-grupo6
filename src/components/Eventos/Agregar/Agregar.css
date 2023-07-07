@@ -1,0 +1,79 @@
+.modal-evento {
+  width: 100%;
+  height: 100vh;
+  background: #00000082;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.modal-evento.--mostrar {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.content {
+  width: 60vw;
+  height: 80%;
+  overflow: auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 12px;
+
+}
+
+.content .body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-evento input,
+.modal-evento textarea {
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid #888888;
+  color: #1c1c1c;
+  cursor: text;
+}
+
+.modal-evento textarea {
+  height: 300px !important;
+  resize: none;
+}
+
+.modal-evento .buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.modal-evento button {
+  padding: 10px 30px;
+  flex-grow: 1;
+  max-width: 200px;
+  border-radius: 50px;
+  margin: 30px 15px;
+}
+
+.modal-evento button:nth-child(1) {
+  border: 2px solid #1c1c1c;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+.modal-evento button:nth-child(2) {
+  background: #287c4d;
+  color: #fff;
+  font-weight: 500;
+}
